@@ -1,0 +1,19 @@
+<div class="contain">
+<p id="notice"><%= notice %></p>
+
+  <h1>Title:</h1>
+  <%= @topic.title %>
+
+  <h1>Caption:</h1>
+  <%= @topic.description %>
+
+<h4>Comments:</h4>
+<%= render @topic.comments %>
+
+<h4>Add a comment:</h4>
+<%= render "comments/form" %>
+
+
+<%= link_to 'Edit', edit_topic_path(@topic) %> |
+<%= link_to 'Back', topics_path %>
+</div>

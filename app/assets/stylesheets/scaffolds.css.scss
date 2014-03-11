@@ -1,0 +1,118 @@
+header div#head {
+  height: 10em;
+  background: url('header.jpg') repeat-x #9411be;
+  margin: -4em 0 4em -4em;
+  width: 120%;
+}
+header div#head  h1{
+  padding: 3em 0 0 4em;
+  color: #fff;
+  text-align: left;
+}
+body {
+  background-color: #ddd;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  padding: .6em;
+}
+h1 {
+  color: #0054a6;
+  text-transform: capitalize;
+}
+h4 {
+  color: #9e0895;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a {
+  color: #000;
+  &:visited {
+    color: #666;
+  }
+  &:hover {
+    color: #fff;
+    background-color: #000;
+  }
+  th {
+  text-align: left;
+  }
+ }
+
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+
+
+}
+div.contain {
+  margin: 0 0 0 10em;
+  width: 100%;
+}
+div.contain img {
+  border: 1px solid #9e0895;
+}
+#notice {
+  color: green;
+}
+textarea {
+  min-height: 14em;
+  width: 17em;
+}
+input {
+  width: 14em;
+  padding: .4em;
+}
+input[type="submit"]:hover{
+  color:   #0054a6;
+  background: #c0e2ec;
+  border-radius: 4px;
+}
+input[type="submit"]{
+  color:   #fff;
+  background:  #9e0895;
+  border-radius: 4px;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+

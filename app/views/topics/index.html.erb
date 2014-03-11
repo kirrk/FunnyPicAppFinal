@@ -1,0 +1,35 @@
+
+<div class="contain">
+<img src="assets/caption_art.jpg" />
+<h1>Vote for your favorite caption!</h1>
+<h4>Want to submit a caption? Log in or sign up and write one</h4>
+<table>
+  <thead>
+    <tr>
+      <th>Photo Title</th>
+      <th>Caption</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @topics.each do |topic| %>
+      <tr>
+        <td><%= topic.title %></td>
+        <td><%= topic.description %></td>
+        <td><%= pluralize(topic.votes.count, "vote") %></td>
+        <td><%= button_to 'This is funny!', votes_path(topic_id: topic.id), method: :post%></td>
+        <td><%= link_to 'Show', topic %></td>
+        <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+        <td><%= link_to 'Destroy', topic, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Topic', new_topic_path %>
+</div>
